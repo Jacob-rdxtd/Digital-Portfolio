@@ -38,8 +38,6 @@ Partial Class Form1
         LinkLabel2 = New LinkLabel()
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
-        RadioButton4 = New RadioButton()
-        RadioButton3 = New RadioButton()
         RadioButton1 = New RadioButton()
         RadioButton2 = New RadioButton()
         Label10 = New Label()
@@ -68,13 +66,13 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.FromArgb(CByte(0), CByte(80), CByte(45))
-        Label2.Location = New Point(569, 99)
+        Label2.Location = New Point(612, 99)
         Label2.Name = "Label2"
-        Label2.Size = New Size(157, 21)
+        Label2.Size = New Size(91, 21)
         Label2.TabIndex = 3
-        Label2.Text = "Smart Scheduling for"
+        Label2.Text = "Daluyan ng"
         Label2.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Label3
@@ -100,13 +98,13 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.FromArgb(CByte(110), CByte(180), CByte(70))
-        Label4.Location = New Point(719, 99)
+        Label4.Location = New Point(696, 99)
         Label4.Name = "Label4"
-        Label4.Size = New Size(109, 21)
+        Label4.Size = New Size(83, 21)
         Label4.TabIndex = 6
-        Label4.Text = "Every PLPians."
+        Label4.Text = "Kaalaman"
         Label4.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label5
@@ -214,8 +212,6 @@ Partial Class Form1
         ' Panel2
         ' 
         Panel2.BackColor = Color.FromArgb(CByte(0), CByte(104), CByte(55))
-        Panel2.Controls.Add(RadioButton4)
-        Panel2.Controls.Add(RadioButton3)
         Panel2.Controls.Add(RadioButton1)
         Panel2.Controls.Add(RadioButton2)
         Panel2.Controls.Add(Label10)
@@ -230,39 +226,11 @@ Partial Class Form1
         Panel2.Size = New Size(350, 561)
         Panel2.TabIndex = 2
         ' 
-        ' RadioButton4
-        ' 
-        RadioButton4.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        RadioButton4.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        RadioButton4.Location = New Point(67, 423)
-        RadioButton4.Name = "RadioButton4"
-        RadioButton4.RightToLeft = RightToLeft.Yes
-        RadioButton4.Size = New Size(210, 23)
-        RadioButton4.TabIndex = 28
-        RadioButton4.TabStop = True
-        RadioButton4.Text = "Balik-Aral Program (BAP)"
-        RadioButton4.TextAlign = ContentAlignment.MiddleRight
-        RadioButton4.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton3
-        ' 
-        RadioButton3.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        RadioButton3.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        RadioButton3.Location = New Point(67, 390)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.RightToLeft = RightToLeft.Yes
-        RadioButton3.Size = New Size(210, 23)
-        RadioButton3.TabIndex = 27
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "Transferee"
-        RadioButton3.TextAlign = ContentAlignment.MiddleRight
-        RadioButton3.UseVisualStyleBackColor = True
-        ' 
         ' RadioButton1
         ' 
         RadioButton1.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         RadioButton1.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        RadioButton1.Location = New Point(67, 321)
+        RadioButton1.Location = New Point(67, 342)
         RadioButton1.Name = "RadioButton1"
         RadioButton1.RightToLeft = RightToLeft.Yes
         RadioButton1.Size = New Size(210, 23)
@@ -276,13 +244,13 @@ Partial Class Form1
         ' 
         RadioButton2.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         RadioButton2.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        RadioButton2.Location = New Point(67, 354)
+        RadioButton2.Location = New Point(67, 375)
         RadioButton2.Name = "RadioButton2"
         RadioButton2.RightToLeft = RightToLeft.Yes
         RadioButton2.Size = New Size(210, 23)
         RadioButton2.TabIndex = 26
         RadioButton2.TabStop = True
-        RadioButton2.Text = "Irregulari"
+        RadioButton2.Text = "Irregular"
         RadioButton2.TextAlign = ContentAlignment.MiddleRight
         RadioButton2.UseVisualStyleBackColor = True
         ' 
@@ -312,11 +280,11 @@ Partial Class Form1
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        Label9.Location = New Point(65, 238)
+        Label9.Location = New Point(103, 240)
         Label9.Name = "Label9"
-        Label9.Size = New Size(220, 21)
+        Label9.Size = New Size(137, 21)
         Label9.TabIndex = 15
-        Label9.Text = "SMART SCHEDULING SYSTEM"
+        Label9.Text = "Inang Pamantasan"
         Label9.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Label8
@@ -420,7 +388,47 @@ Partial Class Form1
     Friend WithEvents Panel6 As Panel
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
 
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If TextBox1.Text = "Enter your student ID" OrElse TextBox2.Text = "Enter your password" Then
+            MsgBox("Please fill in all fields.", MsgBoxStyle.Exclamation, "Invalid Input")
+        ElseIf RadioButton1.Checked = True Then
+            MsgBox("Login successful!", MsgBoxStyle.Information, "Student Status: Regular")
+        Else
+            MsgBox("Login successful!", MsgBoxStyle.Information, "Student Status: Irregular")
+        End If
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub TextBox2_Enter(sender As Object, e As EventArgs) Handles TextBox2.Enter
+        If TextBox2.Text = "Enter your password" Then
+            TextBox2.Clear()
+            TextBox2.UseSystemPasswordChar = True
+        End If
+    End Sub
+
+    Private Sub TextBox1_Enter(sender As Object, e As EventArgs) Handles TextBox1.Enter
+        If TextBox1.Text = "Enter your student ID" Then
+            TextBox1.Clear()
+        End If
+    End Sub
 End Class
